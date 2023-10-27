@@ -1,0 +1,748 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+header {
+    background: rgba(131, 131, 131, 0.438);
+    height: 4rem;
+    line-height: 2rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 1.25rem;
+}
+header figure {
+    background-image: url(imagenes/1x/Asset\ 2.png);
+    background-repeat: no-repeat;
+    width: 80px;
+}
+h2 {
+    margin-bottom: 1.2rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.4rem;
+}
+
+section p:last-of-type {
+    margin: 0;
+}
+
+section {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+section:last-of-type {
+    margin-bottom: 1.25rem;
+}
+
+.banner {
+    width: 100%;
+    height:600px;
+    background-image: url(imagenes/vista-superior-postres-desayuno-tazones-platanos-cucharas.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.banner_text {
+    background-color: rgba(255, 255, 255, 0.61);
+    color: rgb(119, 119, 119);
+    height: 50%;
+    width: 50%;
+    margin-top: 135px;
+    text-align: center;
+    padding-top: 55px;
+}
+.banner_text p {
+    padding-top: 10px;
+    background-color: #03ff2500;
+    width: 50%;
+    display: inline-flex;
+    text-align: justify;
+}
+.nosotros{
+    background-color: rgb(228, 228, 228);
+    width: 1103px;
+    height: 20px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.nosotros h1 {
+    text-align: center;
+    background-color: #e2e2e200;
+    height: ;
+}
+
+.recetas-titulo {
+    background-color: rgb(228, 228, 228);
+    width: 1103px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container-card{
+	width: 100%;
+   justify-content: space-evenly;
+	max-width: 1100px;
+	margin: auto;
+    background-color: #F9F;
+}
+.title-cards{
+  
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: #7a7a7a;
+}
+.card{
+    margin-top: 20px;
+    float: left;
+    display: block;
+    margin-left: 74px;
+	width: 180px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#ffffff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}	
+
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height: 210px;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+    height: 135px;
+    
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: #7a7a7a;
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #6a6a6a;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #6a6a6a;
+	border: 1px solid #264449;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+	background: #2fb4cc;
+	color: #fff;
+}
+/*  width="560" height="315" */
+.video {
+max-width: 560px;
+height: 315px;
+margin: auto;
+margin-top: 480px;
+margin-bottom: 130px;
+}
+iframe {
+width: 100%;
+height: 100%;
+margin: auto;
+}
+
+.ingredientes-recetas {
+    width: 1103px ;
+    height: 320px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 100px;
+}
+.ingredientes {
+    background-color: rgb(219, 219, 219);
+    width: 15em;
+    padding: 10px;
+    border-right: rgb(0, 0, 0);
+    border-right-style: solid ;
+    padding-left: 30px;
+}
+.ingredientes ul li{
+    list-style-type: disc;
+}
+.receta{
+    background-color:rgb(219, 219, 219);
+    width: 1103px;
+    padding: 10px;
+    padding-left: 45px;
+    border-right: rgb(97, 97, 97);
+    border-right-style: solid ;
+}
+.receta ul li {
+    list-style-type: decimal;
+}
+
+footer {
+    width: 69em ;
+    margin: auto;
+    height: 15vh;
+    padding-top: 4em;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 0px 0px 15px 5px rgba(49, 49, 49, 0.158);
+    
+}
+
+/* --------------------------------------------------------------------------MenuHamburguesaTABLET------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 992px) {
+    
+    
+  
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        
+    }
+
+    #hamburguesa li {
+        list-style: none;
+        text-indent: -100px;
+        overflow: hidden;
+        margin-top: .75rem;
+        width: 2.5rem;
+        float: right;
+     }  
+    
+
+    #hamburguesa li a {
+        background: url("imagenes/menu.png") no-repeat center center;
+        background-size: cover;
+        display: block;
+        height: 2.5rem;
+    }
+
+    #hamburguesa li:last-child {
+        display: none;
+    }
+
+
+    nav:target #barra {
+        right: 0;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    nav:target #hamburguesa li:first-child {
+        display: none;
+    }
+
+    nav:target #hamburguesa li:last-child {
+        display: block;
+    }
+
+    #barra {
+        width: 100%;
+        position: absolute;
+        height: calc(100vh - 4rem);
+        top: 4rem;
+        right: -100vw;
+        background: rgb(255, 255, 255);
+        transition: right .5s ease;
+        overflow: hidden;
+    }
+
+    #barra li {
+        list-style: none;
+        margin: 1.5em;
+        width: 90%;
+    }
+
+    #barra li:first-of-type {
+        margin-top: 2rem;
+    }
+    
+    #barra li a {
+        text-decoration: none;
+        display: block;
+        background-color: rgba(185, 185, 185, 0.452);
+        color: black;
+        text-align: center;
+        line-height: 2em;
+    }
+}
+
+/* --------------------------------------------------------------------------MenuHamburguesaTABLET------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 576px) {
+    section {
+        flex-flow: row wrap;
+        column-gap: 1rem;
+    }
+
+    section h2 {
+        flex: 1 991px;
+    }
+
+    section p {
+        width: calc((100% - 1rem) / 2);
+    }
+
+    .nosotros{
+    background-color: rgb(228, 228, 228);
+    width: 1103px;
+    height: 300px;
+    margin: auto;
+    
+}
+.nosotros h1 {
+    text-align: center;
+    padding-top: 100px;
+}
+}
+
+/* --------------------------------------------------------------------------MenuHamburguesaTABLET------------------------------------------------------------------------------------------------------*/
+  @media screen and (min-width: 992px) { 
+    #hamburguesa {
+        display: none;
+    }
+  
+    header {
+        height: auto;
+        max-width: 1100px;
+        margin: auto;
+        padding: 1.25rem;
+        display: flex;
+        align-items: center;
+    }
+
+    section {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    section p {
+        width: calc((100% - 3rem) / 4);
+    }
+
+    #menu {
+        flex: 1;
+    }
+
+    #barra {
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 20px;
+    }
+
+    #barra li {
+        list-style: none;
+        flex: 0 130px;
+        text-align: center;
+    }
+
+    #barra li a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.438);
+        text-align: center;
+        padding: 0 20px;
+        line-height: 30px;
+        border-radius: 10px;
+    }
+
+    #barra li a:hover {
+        background-color: rgba(114, 70, 81, 0);
+        background-color: rgba(109, 109, 109, 0);
+        color: rgb(0, 0, 0);
+    }
+    
+}
+/* --------------------------------------------------------------------------MenuHamburguesaCELULAR------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 455px) {
+    section {
+        flex-flow: row wrap;
+        column-gap: 1rem;
+    }
+
+    section h2 {
+        flex: 1 991px;
+    }
+
+    section p {
+        width: calc((100% - 1rem) / 2);
+    }
+  
+}
+
+/* --------------------------------------------------------------------------MenuHamburguesaCELULAR------------------------------------------------------------------------------------------------------*/
+
+@media screen and (m-width: 455px) { 
+    #hamburguesa {
+        display: none;
+    }
+
+    header {
+        height: auto;
+        max-width: 1100px;
+        margin: auto;
+        padding: 1.25rem;
+        display: flex;
+        align-items: center;
+    }
+
+    section {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    section p {
+        width: calc((100% - 3rem) / 4);
+    }
+
+    #menu {
+        flex: 1;
+    }
+
+    #barra {
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 20px;
+    }
+
+    #barra li {
+        list-style: none;
+        flex: 0 130px;
+        text-align: center;
+    }
+
+    #barra li a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 0 20px;
+        line-height: 30px;
+    }
+
+    #barra li a:hover {
+        background-color: rgba(224, 141, 162, 0);
+        border-bottom: #264449;
+        border-bottom-style: solid;
+        color: rgb(0, 0, 0);
+    }
+
+
+}
+
+/*---------------------------------CELULAR--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 470px) {
+
+
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+    header figure {
+        background-image: url(imagenes/1x/Asset\ 2.png);
+        margin: auto;
+        width: 80px;
+    }
+    header h1 {
+        font-size: 0;
+    }
+    .banner {
+        width: 100%;
+        height:600px;
+        background-image: url(imagenes/vista-superior-postres-desayuno-tazones-platanos-cucharas.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .banner_text {
+        background-color: rgba(255, 255, 255, 0.61);
+        color: rgb(119, 119, 119);
+        height: 50%;
+        width: 100%;
+        margin-top: 135px;
+        text-align: center;
+        padding-top: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .banner_text p {
+        width: 50vmin;
+    }
+    .nosotros{
+        background-color: rgb(228, 228, 228);
+        width: 100vw;
+        height: 300px;
+        margin: auto;
+        padding: 0px 20px 20px;
+        text-align: center;
+    }
+    .nosotros h1 {
+        text-align: center;
+        padding-top: 100px;
+    }
+    .recetas-titulo {
+        background-color: rgb(255, 255, 255);
+        width: 450px;
+        margin: auto;
+        margin-top: 25px;
+        text-align: center;
+      
+    }
+    .video {
+        max-width: 560px;
+        height: 315px;
+        margin: auto;
+        margin-top: 480px;
+        margin-bottom: 1100px;
+     }
+        iframe {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        }   
+
+        .ingredientes-recetas {
+            width: 450px ;
+            height: 3px;
+            margin: auto;
+           display: inline-block;
+            margin-top: 5px;
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 100px;
+            padding-bottom: 500px;
+        }
+        .ingredientes {
+            border-right:none;
+            width: 100vmax;
+            padding: 10px;
+            border-bottom:rgb(97, 97, 97);
+            border-bottom-style: solid ;
+        }
+        .ingredientes ul li{
+        list-style: none;
+        }
+        .receta{
+            float: left;
+            border-right: rgb(97, 97, 97);
+            width: 250px;
+            height: 317px;
+            padding: 10px;
+            padding-bottom: 100px;
+            border-right: rgb(97, 97, 97);
+            border-right-style: solid ;
+        }
+        .receta ul li {
+            list-style: none;
+        }
+    #imagenes {
+        background-color: #03ff25;
+        display: flex;
+        
+        
+    }
+    .card{
+        float: left;
+        display: block;
+        margin-left: 115px;
+        margin-bottom: 20px;
+        min-width: 250px;
+        border-radius: 6px;
+        overflow: hidden;
+        background:#ffffff;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        transition: all 400ms ease-out;
+        cursor: default;
+    }
+    footer {
+        width: 450px ;
+        margin: auto;
+        height: 15vh;
+        padding-top: 4em;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        box-shadow: 0px 0px 15px 5px rgba(49, 49, 49, 0.158);
+        
+    }
+}
+/*---------------------------------------------------------TABLET---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:471px ) and (max-width: 991px){    
+    body{
+        background-color: #ffffff;
+    }
+    header figure {
+        background-image: url(imagenes/1x/Asset\ 2.png);
+        margin: auto;
+        width: 80px;
+    }
+    header h1 {
+        font-size: 0;
+    }
+    .banner {
+        width: 100%;
+        height:600px;
+        background-image: url(imagenes/vista-superior-postres-desayuno-tazones-platanos-cucharas.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .banner_text {
+        background-color: rgba(255, 255, 255, 0.61);
+        color: rgb(119, 119, 119);
+        height: 50%;
+        width: 100%;
+        margin-top: 135px;
+        text-align: center;
+        padding-top: 60px;
+    }
+    .banner_text p {
+        background-color: #03ff2500;
+        padding: 20px;
+        width: 60%;
+        display: inline-flex;
+
+    }
+    .card{
+        float: left;
+        display: block;
+        margin-left: 74px;
+        min-width: 100px;
+        border-radius: 6px;
+        overflow: hidden;
+        background:#ffffff;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        transition: all 400ms ease-out;
+        cursor: default;
+    }
+
+    .video {
+        max-width: 560px;
+        height: 315px;
+        margin: auto;
+        margin-top: 480px;
+        margin-bottom: 350px;
+        }
+        iframe {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        }
+
+    .nosotros{
+        background-color: rgb(228, 228, 228);
+        width: 100vmin;
+        height: 300px;
+        margin: auto;
+        padding: 0px 20px 20px;
+        text-align: center;
+    }
+    .nosotros h1 {
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .recetas-titulo {
+        background-color: rgb(255, 255, 255);
+        width: 100vmin;
+        margin: auto;
+        margin-top: 25px;
+        text-align: center;
+
+}
+
+.card {
+    margin-left: 15vmin;
+    margin-bottom: 20px ;
+}
+
+
+    .ingredientes-recetas {
+        width: 90%;
+        height: 3px;
+        margin: auto;
+       display: inline-block;
+        margin-top: 5px;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 50px;
+        padding-bottom: 500px;
+    }
+    .ingredientes {
+        background-color: rgb(219, 219, 219);
+        width: 100vmax;
+        padding: 10px;
+        border-bottom:rgb(97, 97, 97);
+        border-bottom-style: solid ;
+        border-right: none;
+    }
+    .ingredientes ul li{
+    list-style: none;
+    }
+    .receta{
+        float: left;
+        background-color: rgb(219, 219, 219);
+        width: 66vw;
+
+
+
+        height: 317px;
+        padding: 10px;
+        padding-bottom: 100px;
+        border-right: rgb(97, 97, 97);
+        border-right-style: solid ;
+    }
+    .receta ul li {
+        list-style: none;
+    }
+#imagenes {
+    background-color: #ffffff;
+    display: flex;
+    width: auto;
+    height: auto ;
+
+
+    
+}
+
+footer {
+    width: 100vmin ;
+    margin: auto;
+    height: 15vh;
+    padding-top: 4em;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 0px 0px 15px 5px rgba(49, 49, 49, 0.158);
+    
+}
+}
